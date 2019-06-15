@@ -333,6 +333,7 @@
         border: solid 2px #000;
         text-align: left;
         padding: 10px;
+        margin: 0 auto;
     }
 
     .say {
