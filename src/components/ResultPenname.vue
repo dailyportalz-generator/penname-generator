@@ -258,45 +258,46 @@
             },
             poseList() {
                 if (this.inputData.sex == 1) {
-                    return ["01_01.gif",
-                        "01_02.gif",
-                        "01_03.gif",
-                        "01_04.gif",
-                        "01_05.gif",
-                        "01_06.gif",
-                        "01_07.gif",
-                        "01_08.gif",
-                        "01_09.gif",
-                        "01_11.gif",
-                        "01_12.gif",
-                        "01_13.gif",
-                        "01_14.gif",
-                        "01_15.gif",
-                        "01_16.gif",
-                        "01_17.gif",
-                        "01_18.gif",
-                        "01_19.gif"];
+                    return [
+                        require("@/assets/img/01_01.gif"),
+                        require("@/assets/img/01_02.gif"),
+                        require("@/assets/img/01_03.gif"),
+                        require("@/assets/img/01_04.gif"),
+                        require("@/assets/img/01_05.gif"),
+                        require("@/assets/img/01_06.gif"),
+                        require("@/assets/img/01_07.gif"),
+                        require("@/assets/img/01_08.gif"),
+                        require("@/assets/img/01_09.gif"),
+                        require("@/assets/img/01_11.gif"),
+                        require("@/assets/img/01_12.gif"),
+                        require("@/assets/img/01_13.gif"),
+                        require("@/assets/img/01_14.gif"),
+                        require("@/assets/img/01_15.gif"),
+                        require("@/assets/img/01_16.gif"),
+                        require("@/assets/img/01_17.gif"),
+                        require("@/assets/img/01_18.gif"),
+                        require("@/assets/img/01_19.gif"),];
                 } else {
-                    return ["02_01.gif",
-                        "02_02.gif",
-                        "02_03.gif",
-                        "02_04.gif",
-                        "02_05.gif",
-                        "02_06.gif",
-                        "02_07.gif",
-                        "02_08.gif",
-                        "02_09.gif",
-                        "02_10.gif",
-                        "02_11.gif",
-                        "02_12.gif",
-                        "02_13.gif",
-                        "02_14.gif",
-                        "02_15.gif",
-                        "02_16.gif",
-                        "02_17.gif",
-                        "02_18.gif",
-                        "02_19.gif",
-                        "02_20.gif",
+                    return [
+                        require("@/assets/img/02_01.gif"),
+                        require("@/assets/img/02_02.gif"),
+                        require("@/assets/img/02_03.gif"),
+                        require("@/assets/img/02_04.gif"),
+                        require("@/assets/img/02_05.gif"),
+                        require("@/assets/img/02_06.gif"),
+                        require("@/assets/img/02_07.gif"),
+                        require("@/assets/img/02_08.gif"),
+                        require("@/assets/img/02_09.gif"),
+                        require("@/assets/img/02_11.gif"),
+                        require("@/assets/img/02_12.gif"),
+                        require("@/assets/img/02_13.gif"),
+                        require("@/assets/img/02_14.gif"),
+                        require("@/assets/img/02_15.gif"),
+                        require("@/assets/img/02_16.gif"),
+                        require("@/assets/img/02_17.gif"),
+                        require("@/assets/img/02_18.gif"),
+                        require("@/assets/img/02_19.gif"),
+                        require("@/assets/img/02_20.gif"),
                     ];
                 }
             },
@@ -307,7 +308,7 @@
                 return this.gagList[this.choiceGagIndex];
             },
             pose() {
-                return '/assets/img/' + this.poseList[this.choicePoseIndex];
+                return this.poseList[this.choicePoseIndex];
             },
 
         }
@@ -333,9 +334,11 @@
         text-align: left;
         padding: 10px;
     }
-    .say{
+
+    .say {
         text-align: left;
     }
+
     .balloon {
         position: relative;
         margin-bottom: 20px;
@@ -346,7 +349,7 @@
         letter-spacing: .11em;
         width: 320px;
         font-size: medium;
-        font-family: "メイリオ","ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+        font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
     }
 
     .balloon:after {
@@ -363,9 +366,10 @@
         transform: rotate(135deg);
         background-color: #fff;
     }
+
     .pose {
         text-align: center;
-        margin-left:40px;
+        margin-left: 40px;
         width: 400px;
     }
 
